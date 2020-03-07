@@ -1,3 +1,6 @@
+<?php
+session_start();
+ ?>
 <!DOCTYPE html>
 <html lang="rus">
 <head>
@@ -38,7 +41,8 @@
           </div>
          
           <?php
-          if($_COOKIE['user'] == ''):          
+          if($_COOKIE['user'] == ''):
+        
           ?>
    
       <!--Форма авторизации  -->
@@ -74,7 +78,7 @@
       </div>
       
  <!--Форма регистрации -->
-      <div id="btn2" class="col-sm-2"><button class="btn-info" data-toggle="modal" data-target="#registr"><i class="fas fa-sign-in-alt"></i> Регистрация</button>
+      <div id="btn2" class="col-sm-2"><button  class="btn-info" data-toggle="modal" data-target="#registr"><i class="fas fa-sign-in-alt"></i> Регистрация</button>
       <div id="registr" class="modal fade" tabindex="-1">
           <div class="modal-dialog ">
               <div class="modal-content">
@@ -88,19 +92,33 @@
                       
                          <label for="login">Логин</label>
                           <input type="login" class="form-control" id="login" name="login"  placeholder="Введите ваш логин">
+                              <label for="email">Email</label>
+                              <input type="email" class="form-control" id="email" name="email"  placeholder="Введите ваш email">
                           <label for="name">Введите ваше имя</label>
                               <input type="name" class="form-control" id="password" name="name" placeholder="Ваше имя">
                           <label for="pass">Пароль</label>
                               <input type="password" class="form-control" id="password" name="pass" placeholder="Введите пароль">
                               <p>от 6 до 8 символов</p>
-                          
-                           <button class="btn btn-success" type="submit"> Регистрация</button>
+                              <?php     
+               if ($_SESSION['message'])
+               {
+                   echo '<p class="msg"> ' . $_SESSION['message']. '</p>';
+               }
+                              unset($_SESSION['message']);
+                              session_destroy();
+                              ?>                            
+                                                            
+                              
+                           <button class="btn btn-success" type="submit" name="reg"> Регистрация</button>
                           
                 
                       </form>
                       </div>
                       <div class="modal-footer">
                           <button class="btn btn-danger" data-dismiss="modal">Закрыть</button>
+                     
+                        
+                           
                       </div>
               </div>
           </div>
