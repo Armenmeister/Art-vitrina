@@ -36,6 +36,6 @@ $mysql = new mysqli('localhost','root','','art-vitrina');
 $mysql->query("INSERT INTO `users` (`login`, `pass`, `name`, `email`)
             VALUES('$login', '$pass','$name','$email')");
 $mysql->close();
-header('Location: http://art-vitrina?modal');
+header('Location: http://art-vitrina');
 ?>
     

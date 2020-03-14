@@ -1,0 +1,245 @@
+.fon
+{  background:url("../images/header.png") no-repeat center top;
+    
+
+
+    background-size:100%;
+}
+body{
+    background-color:black;
+}
+.header
+{
+    border-bottom:1px solid rgba(160,160,160,0.5);
+
+}
+}
+
+.row{
+
+    background:blue;
+}
+.row button
+{
+    margin-top:30px;
+}
+
+#log
+{
+    white-space: nowrap;
+
+    font-size:56px;
+    text-align: center;
+    color:aliceblue;
+    font-family:Still Time Cyr; 
+}
+.row button
+{
+    margin-left:20px;
+}
+.test
+{
+    padding:5px 0px 0px 0px;
+    margin-top: 15px;
+    height:70px;
+
+
+
+}
+.search-btn
+{
+    margin-left:30px;  
+}
+.menu{
+    margin-top:15px; 
+}
+.menu li{
+    display: inline;
+  margin-left:15px; 
+   
+    line-height:45px;
+}
+#links
+{ 
+
+
+
+   
+}
+#links a
+{ background:rgba(99, 178, 188, 0.49);
+    border-radius:15px; 
+    border:2px solid rgba(72, 110, 125, 1);
+    padding:5px 10px 5px 10px; 
+    color:white;
+    text-decoration:none;
+    font-size:23px;
+    font-family:Lobster;
+}
+
+.search-box
+{  height:40px;
+    margin-top:15px; 
+     margin-bottom:10px;
+    margin-left: 4%;
+    
+    background-color:#2f3640;
+    padding:0px 10px 0px 10px; 
+    border-radius:15px;
+}
+.search-btn
+{
+    border:none;
+    background:none;
+    outline:none;
+}
+.search-txt
+{
+    color: aliceblue;
+    border:none;
+    background:none;
+    outline:none;
+    transition:0.4s;
+    line-height:40px;
+    
+
+}
+
+
+
+.foto img
+{
+    
+    border-radius:50%;
+    text-align: center;
+}
+.foto
+{
+    margin-top:50px; 
+    color: aliceblue;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav a
+{
+    font-family:Noto Sans HK; 
+    font-size:18px;
+    color: white;
+    text-decoration:none;
+    text-align:center;
+    margin-right:10px;
+}
+.tab-content
+{
+
+    background-size:cover;
+    color: white;
+}
+
+#footer
+{
+    padding-top:20px; 
+    border-top:2px solid rgb(190, 209, 209);
+}
+#footer a
+{ 
+    margin-left:10px; 
+    font-size:20px; 
+}
+#footer p
+{
+    color:dimgrey;
+}
+#fot
+{
+    margin-left:-2px; 
+    color: aliceblue; 
+}
+#fot a
+{
+    color: aliceblue; 
+}
+
+
+.cabinet
+{ 
+
+
+
+    margin-top:10px;
+
+
+
+}
+.akk button
+{
+    margin-top:10px;
+    width:150px; 
+    height:40px;
+
+}
+.akk p
+{
+
+    font-size:18px; 
+    color: aliceblue;
+
+}
+.akk2
+{
+    background:rgba(99, 178, 188, 0.49);
+    border:1px solid rgba(99, 178, 188, 0.9);
+}
+.akk3
+{
+    background:rgba(99, 178, 188, 0.9);
+    max-width:40px; 
+
+}
+.btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;
+    border:none;
+}
+.dropdown-menu
+{
+    min-width:91%;
+}
