@@ -92,6 +92,8 @@ body{
     border:none;
     background:none;
     outline:none;
+    float:right;
+    padding-top:8px; 
 }
 .search-txt
 {
@@ -101,6 +103,7 @@ body{
     outline:none;
     transition:0.4s;
     line-height:40px;
+    float:left;
     
 
 }
@@ -120,6 +123,10 @@ body{
     text-align: center;
 }
 
+.navbar
+{
+    
+}
 
 
 
@@ -127,9 +134,35 @@ body{
 
 
 
+#btn2
+{
+
+    max-width:200px;
+    padding-bottom:5px; 
+
+}
+#btn
+{
+    max-width:150px; 
+    border-radius:5px;
 
 
+}
+.btn-info1
+{
+    background-color:rgba(0,0,0,0);
+    border:1px solid white;
+    border-radius:5px;
+    font-size:18px;
+    color: white;
 
+}
+.btn-info{
+    background-color:deepskyblue;
+    border:none;
+    border-radius:5px;
+    font-size:18px;
+}
 
 
 

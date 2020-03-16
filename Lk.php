@@ -128,7 +128,7 @@
                         
                         
                         
-                        <div class="cabinet col-sm-12  col-md-12 col-lg-3 col-kl-3 text-center ">
+                        <div class="cabinet col-sm-12  col-md-12 col-lg-3 col-xl-3 text-center ">
                             <div class="akk btn-group btn-group-sm ">
                                 <button class="akk2 btn ">
                                     <a href="Lk.php"> <p><?=$_COOKIE['user']?></p></a>
@@ -162,11 +162,62 @@
             <div class="container-fluid ">
 
                 <div class="row justify-content-center">
-                <div class="port col-2">
-                    <div class="zagolovok">
-                        <div class="foto">
+                <div class="port ">
+                    <div class="zagolovok col-sm-12  col-md-12 col-lg-12 col-xl-12 ">
+                        <div class="foto col-12">
                             <img alt="имя" height="120" ng-src="https://www.gravatar.com/avatar/eb99c86ff125634180a47916fc029681.jpg?size=240&amp;d=https%3A%2F%2Fwww.artstation.com%2Fassets%2Fdefault_avatar.jpg" width="120" src="https://www.gravatar.com/avatar/eb99c86ff125634180a47916fc029681.jpg?size=240&amp;d=https%3A%2F%2Fwww.artstation.com%2Fassets%2Fdefault_avatar.jpg">
-                            <p> <h3><?=$_COOKIE['user']?></h3></p>
+                         <h3><?=$_COOKIE['user']?></h3>
+                        </div>
+                        <div class="col-12"><br></div>
+                        <!-- Nav pills -->
+                        <ul class="nav nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="pill" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#menu1">Menu 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#menu2">Menu 2</a>
+                            </li>
+                        </ul>
+                        
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane container active" id="home">
+                                <div id="btn" class="col-sm-2"><button class="btn-info1" data-toggle="modal" data-target="#myModal"><i class="fas fa-door-open"></i>Войти</button>
+
+                                    <div id="myModal" class="modal fade" tabindex="-1">
+                                        <div class="modal-dialog ">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title">Авторизация</h4>
+                                                    <button class="close" data-dismiss="modal">x</button>
+
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form  action="validation/auth.php" method="post">
+                                                        <div class="form-group">
+                                                            <label for="login">Логин</label>
+                                                            <input type="login" class="form-control" id="login" name="login"  placeholder="Введите ваш логин">
+                                                            <label for="pass">Пароль</label>
+                                                            <input type="password" class="form-control" id="password" name="pass" placeholder="Введите пароль">
+
+                                                            <button class="btn btn-success" type="submit"> Войти</button>
+
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button class="btn btn-danger" data-dismiss="modal">Закрыть</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane container fade" id="menu1">...</div>
+                            <div class="tab-pane container fade" id="menu2">...</div>
                         </div>
                     </div>
                 </div>
