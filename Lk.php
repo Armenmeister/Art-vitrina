@@ -8,6 +8,17 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        
+        
+        
+        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+        <!-- or -->
+        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+        
+        
+        
+        
+        
         <link rel="stylesheet" href="assets/css/style2.css">
         <title>Арт-витрина</title>
     </head>
@@ -171,11 +182,9 @@
                         <div class="col-12"><br></div>
                         <!-- Nav pills -->
                         <ul class="nav nav-pills">
+                           
                             <li class="nav-item">
-                                <a class="nav-link active" data-toggle="pill" href="#home">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="pill" href="#menu1">Menu 1</a>
+                                <a class="nav-link active" data-toggle="pill" href="#menu1">Menu 1</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="pill" href="#menu2">Menu 2</a>
@@ -184,39 +193,64 @@
                         
                         <!-- Tab panes -->
                         <div class="tab-content">
-                            <div class="tab-pane container active" id="home">
-                                <div id="btn" class="col-sm-2"><button class="btn-info1" data-toggle="modal" data-target="#myModal"><i class="fas fa-door-open"></i>Войти</button>
-
-                                    <div id="myModal" class="modal fade" tabindex="-1">
-                                        <div class="modal-dialog ">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h4 class="modal-title">Авторизация</h4>
-                                                    <button class="close" data-dismiss="modal">x</button>
-
+                        
+                            <div class="tab-pane container active" id="menu1">
+                                
+                            
+                                
+                                <img id="galer" src="images/gal.PNG">
+                                <div id="mymodal" class="modal text">
+                                   <div class="container">
+                                       <div class="row justify-content-center ">
+                                    <div class="modcontent ">
+                                        <span class="close">&times;</span>
+                                       
+                                       
+                                       
+                                       
+                                        <div id="karusel" class="carousel" data-ride="carousel">
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#karusel" data-slide-to="0" class="active"></li>
+                                                <li data-target="#karusel" data-slide-to="1"></li>
+                                                <li data-target="#karusel" data-slide-to="2"></li>
+                                            </ol>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100 h-100" src="images/1.jpg" alt="Первый слайд">
                                                 </div>
-                                                <div class="modal-body">
-                                                    <form  action="validation/auth.php" method="post">
-                                                        <div class="form-group">
-                                                            <label for="login">Логин</label>
-                                                            <input type="login" class="form-control" id="login" name="login"  placeholder="Введите ваш логин">
-                                                            <label for="pass">Пароль</label>
-                                                            <input type="password" class="form-control" id="password" name="pass" placeholder="Введите пароль">
-
-                                                            <button class="btn btn-success" type="submit"> Войти</button>
-
-                                                        </div>
-                                                    </form>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100 h-100 " src="images/2.png" alt="Второй слайд">
                                                 </div>
-                                                <div class="modal-footer">
-                                                    <button class="btn btn-danger" data-dismiss="modal">Закрыть</button>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100 h-100 " src="images/3.png" alt="Третий слайд">
                                                 </div>
                                             </div>
+                                            <a class="carousel-control-prev" href="#karusel" role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#karusel" role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
                                         </div>
+                                       
+                                       
+                                       
+                                       
+                                       
                                     </div>
                                 </div>
+                                </div>
+                                </div>
+                              <script src="js/js.js"></script>
+                                
+                                
+                                
+                                
+                                
+                                
                             </div>
-                            <div class="tab-pane container fade" id="menu1">...</div>
                             <div class="tab-pane container fade" id="menu2">...</div>
                         </div>
                     </div>
