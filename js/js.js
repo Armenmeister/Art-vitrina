@@ -1,4 +1,4 @@
-var modal = document.getElementById('mymodal');
+var modal = document.getElementById('mymodl');
 var btn = document.getElementById('galer');
 var span = document.getElementsByClassName("close")[0];
 

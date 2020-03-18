@@ -9,7 +9,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
         
-        
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         
         <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
         <!-- or -->
@@ -32,15 +32,15 @@
 
                     <div class="row">
 
-                        <div class=" col-sm-12 col-md-12 col-lg-2 col-xl-2" id="log"><p>Арт-витрина</p>
+                        <div class=" col-sm-12 col-md-12 col-lg-2 col-xl-2" id="log"><a href="http://art-vitrina/"><p>Арт-витрина</p></a>
                         </div>
 
                         <div id="links" class="col-sm-12 col-lg-7 col-md-12 col-xl-7 text-center ">
                            <ul class="menu">
                                <li><a href="#">Иллюстрации</a></li>
+                               <li><a href="#">Новости</a></li>
                                <li><a href="#">Авторы</a></li>
-                               <li><a href="#">Авторы</a></li>
-                               <li><a href="#">Сообщество</a></li>
+                               <li><a href="#">Витрина</a></li>
                             
                             </ul>
                         </div>
@@ -149,8 +149,9 @@
                                 </button>
 
                                 <ul class="dropdown-menu dropdown-menu-right">
-                                    <li><a href="#">ссылка 1</a></li>
-                                    <li><a href="#">ссылка 2</a></li>
+                                    <li><a href="#">Моя галерея</a></li>
+                                    <li><a href="#">Мои записи</a></li>
+                                    <li><a href="#">Натройки</a></li>
                                     <li><a href="validation/exit.php">Выход</a></li>
                                 </ul>
 
@@ -196,19 +197,34 @@
                         
                             <div class="tab-pane container active" id="menu1">
                                 
-                            
+                                <div class="container-fluid">
+
+                                    <div class="row justify-content-center">
                                 
                                 <img id="galer" src="images/gal.PNG">
-                                <div id="mymodal" class="modal text">
+                                <div id="mymodl" class="modal">
                                    <div class="container">
                                        <div class="row justify-content-center ">
-                                    <div class="modcontent ">
+                                    <div class=" modcontent ">
                                         <span class="close">&times;</span>
                                        
                                        
+                                        <div class="col-3 avtor">
+                                            <img alt="имя" height="120" ng-src="https://www.gravatar.com/avatar/eb99c86ff125634180a47916fc029681.jpg?size=240&amp;d=https%3A%2F%2Fwww.artstation.com%2Fassets%2Fdefault_avatar.jpg" width="120" src="https://www.gravatar.com/avatar/eb99c86ff125634180a47916fc029681.jpg?size=240&amp;d=https%3A%2F%2Fwww.artstation.com%2Fassets%2Fdefault_avatar.jpg">
+                                        <a><h3><?=$_COOKIE['user']?></h3></a>
+                                            
+                                            
+                                            <div class="description">Здесь будет описание работы по типу ну я вот недавно начал заниматься чем-то там,а если точнее всего 36 секунд как и вот я уже немного научился,да.ок</div>
+                                        
+                                            <div class="score">
+                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                            <i class="fa fa-comments" aria-hidden="true"></i>
+                                            
+                                             
+                                               </div>
+                                        </div>
                                        
-                                       
-                                        <div id="karusel" class="carousel" data-ride="carousel">
+                                        <div id="karusel" class="col-9 carousel" data-ride="carousel">
                                             <ol class="carousel-indicators">
                                                 <li data-target="#karusel" data-slide-to="0" class="active"></li>
                                                 <li data-target="#karusel" data-slide-to="1"></li>
@@ -235,6 +251,8 @@
                                             </a>
                                         </div>
                                        
+                                        
+                                       
                                        
                                        
                                        
@@ -257,7 +275,8 @@
                 </div>
                 </div>
             </div>
-
+                </div>
+            </div>
             
                 
                 

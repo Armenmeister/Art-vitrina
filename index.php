@@ -147,8 +147,9 @@ session_start();
             </button>
            
            <ul class="dropdown-menu dropdown-menu-right">
-               <li><a href="#">ссылка 1</a></li>
-               <li><a href="#">ссылка 2</a></li>
+               <li><a href="#">Моя галерея</a></li>
+               <li><a href="#">Мои записи</a></li>
+               <li><a href="#">Настройки</a></li>
                <li><a href="validation/exit.php">Выход</a></li>
            </ul>
            
