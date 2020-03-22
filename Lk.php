@@ -182,97 +182,140 @@
                         </div>
                         <div class="col-12"><br></div>
                         <!-- Nav pills -->
-                        <ul class="nav nav-pills">
-                           
+                        
+                        <ul class="nav nav-tabs" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" data-toggle="pill" href="#menu1">Menu 1</a>
+                                <a class="nav-link active" data-toggle="tab" href="#home" role="tab">Галерея</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="pill" href="#menu2">Menu 2</a>
+                                <a class="nav-link" data-toggle="tab" href="#profile" role="tab">Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#messages" role="tab">Messages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#settings" role="tab">Settings</a>
                             </li>
                         </ul>
-                        
-                        <!-- Tab panes -->
+
+                        <!-- Вкладка панели -->  
                         <div class="tab-content">
-                        
-                            <div class="tab-pane container active" id="menu1">
+                            <div class="tab-pane active" id="home" role="tabpanel">
                                 
                                 <div class="container-fluid">
 
                                     <div class="row justify-content-center">
-                                
-                                <img id="galer" src="images/gal.PNG">
-                                <div id="mymodl" class="modal">
-                                   <div class="container">
-                                       <div class="row justify-content-center ">
-                                    <div class=" modcontent ">
-                                        <span class="close">&times;</span>
-                                       
-                                       
-                                        <div class="col-3 avtor">
-                                            <img alt="имя" height="120" ng-src="https://www.gravatar.com/avatar/eb99c86ff125634180a47916fc029681.jpg?size=240&amp;d=https%3A%2F%2Fwww.artstation.com%2Fassets%2Fdefault_avatar.jpg" width="120" src="https://www.gravatar.com/avatar/eb99c86ff125634180a47916fc029681.jpg?size=240&amp;d=https%3A%2F%2Fwww.artstation.com%2Fassets%2Fdefault_avatar.jpg">
-                                        <a><h3><?=$_COOKIE['user']?></h3></a>
-                                            
-                                            
-                                            <div class="description">Здесь будет описание работы по типу ну я вот недавно начал заниматься чем-то там,а если точнее всего 36 секунд как и вот я уже немного научился,да.ок</div>
+
+                                    
                                         
-                                            <div class="score">
-                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                            <i class="fa fa-comments" aria-hidden="true"></i>
-                                            
-                                             
-                                               </div>
-                                        </div>
-                                       
-                                        <div id="karusel" class="col-9 carousel" data-ride="carousel">
-                                            <ol class="carousel-indicators">
-                                                <li data-target="#karusel" data-slide-to="0" class="active"></li>
-                                                <li data-target="#karusel" data-slide-to="1"></li>
-                                                <li data-target="#karusel" data-slide-to="2"></li>
-                                            </ol>
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img class="d-block w-100 h-100" src="images/1.jpg" alt="Первый слайд">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img class="d-block w-100 h-100 " src="images/2.png" alt="Второй слайд">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img class="d-block w-100 h-100 " src="images/3.png" alt="Третий слайд">
+                                        <img id="galer" data-toggle="modal" data-target="#mymodl" src="images/gal.PNG" >
+                                        <div id="mymodl" class="modal fade" tabindex="-1">
+                                            <div class="container">
+                                                <div class="row justify-content-center ">
+                                                    <div class="modcontent ">
+                                                        <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span class="close">&times;</span>
+                                                        </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                        <div class="col-3 avtor">
+                                                            <img alt="имя" height="120" ng-src="https://www.gravatar.com/avatar/eb99c86ff125634180a47916fc029681.jpg?size=240&amp;d=https%3A%2F%2Fwww.artstation.com%2Fassets%2Fdefault_avatar.jpg" width="120" src="https://www.gravatar.com/avatar/eb99c86ff125634180a47916fc029681.jpg?size=240&amp;d=https%3A%2F%2Fwww.artstation.com%2Fassets%2Fdefault_avatar.jpg">
+                                                            <a><h3><?=$_COOKIE['user']?></h3></a>
+
+
+                                                            <div class="description">Здесь будет описание работы по типу ну я вот недавно начал заниматься чем-то там,а если точнее всего 36 секунд как и вот я уже немного научился,да.ок</div>
+
+                                                            <div class="score">
+                                                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                                <i class="fa fa-comments" aria-hidden="true"></i>
+
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div id="karusel" class="col-9 carousel" data-ride="carousel">
+                                                            <ol class="carousel-indicators">
+                                                                <li data-target="#karusel" data-slide-to="0" class="active"></li>
+                                                                <li data-target="#karusel" data-slide-to="1"></li>
+                                                                <li data-target="#karusel" data-slide-to="2"></li>
+                                                            </ol>
+                                                            <div class="carousel-inner">
+                                                                <div class="carousel-item active">
+                                                                    <img class="d-block w-100 h-100" src="images/1.jpg" alt="Первый слайд">
+                                                                </div>
+                                                                <div class="carousel-item">
+                                                                    <img class="d-block w-100 h-100 " src="images/2.png" alt="Второй слайд">
+                                                                </div>
+                                                                <div class="carousel-item">
+                                                                    <img class="d-block w-100 h-100 " src="images/3.png" alt="Третий слайд">
+                                                                </div>
+                                                            </div>
+                                                            <a class="carousel-control-prev" href="#karusel" role="button" data-slide="prev">
+                                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                                <span class="sr-only">Previous</span>
+                                                            </a>
+                                                            <a class="carousel-control-next" href="#karusel" role="button" data-slide="next">
+                                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                                <span class="sr-only">Next</span>
+                                                            </a>
+                                                        </div>
+                                                        </div>
+
+                                                        <div class="comments">
+                                                            <form >
+                                                                <div class="vvod">
+                                                                    <div id="com-name" class="form-group">
+                                                                        <label for="comment-name">Имя:</label>
+                                                                        <input type="name" class="form-control" id="comment-name" placeholder="Твое имя">
+                                                                    </div>
+
+                                                                    <div id="com-body" class="form-group">
+                                                                        <label for="comment-body">Комментарий:</label>
+                                                                        <input type="name" class="form-control" id="comment-body" placeholder="Твой комментарий">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group text-right">
+                                                                    <button type="submit" id="comment-add" class="btn btn-primary">Комментировать</button>
+                                                                </div>
+                                                                
+                                                               
+                                                    
+                                                            </form>
+
+                                                        </div>
+
+
+
+
+
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <a class="carousel-control-prev" href="#karusel" role="button" data-slide="prev">
-                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                <span class="sr-only">Previous</span>
-                                            </a>
-                                            <a class="carousel-control-next" href="#karusel" role="button" data-slide="next">
-                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                <span class="sr-only">Next</span>
-                                            </a>
                                         </div>
-                                       
-                                        
-                                       
-                                       
-                                       
-                                       
-                                       
+                                        <script src="js/js.js"></script>
+
+
+
+
+
+
                                     </div>
+
                                 </div>
-                                </div>
-                                </div>
-                              <script src="js/js.js"></script>
-                                
-                                
-                                
-                                
-                                
-                                
                             </div>
-                            <div class="tab-pane container fade" id="menu2">...</div>
+                            <div class="tab-pane" id="profile" role="tabpanel">...</div>
+                            <div class="tab-pane" id="messages" role="tabpanel">...</div>
+                            <div class="tab-pane" id="settings" role="tabpanel">...</div>
                         </div>
-                    </div>
-                </div>
+                        
+                        
+                      
+                        
+                        <!-- Tab panes -->
+                       
+                                
+                                
                 </div>
             </div>
                 </div>

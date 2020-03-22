@@ -139,7 +139,7 @@ text-decoration:none;
 }
 #btn
 {
-    z-index:5000;
+   
     max-width:150px; 
     border-radius:5px;
 
@@ -161,14 +161,17 @@ text-decoration:none;
     font-size:18px;
 }
 
-
+#mymodl
+{
+    z-index:9999;
+}
 
 .modal
 {
     min-width:1140px;
  display: none;
     position: fixed;
-    z-index: 1;
+  
     left: 0;
     top:0;
     width:100%;
@@ -217,7 +220,7 @@ margin: 0;
 }
 .avtor
 {
-   width:260px; 
+   width:270px; 
  float:  right;  
     text-align: center;
 }
@@ -233,9 +236,38 @@ margin: 0;
     font-family: fontawesome !important;
 }
 
+.vvod
+{
+    width:100%; 
+    border-top:1px solid rgba(75, 255, 255,0.5);
+    border-bottom:1px solid rgba(75, 255, 255,0.5);
+    
+    
+    box-shadow:0 0 10px rgba(75, 255, 255,0.3); 
+}
 
-
-
+#com-name
+{
+    padding-left:50px; 
+}
+#com-body
+{
+    padding-left:50px; 
+}
+#comment-name
+{
+width:300px; 
+ background:none;  
+    border-right:1px solid rgba(75, 255, 255,0.5);
+    color: aliceblue;
+    border:none;
+}
+#comment-body
+{
+    background:none; 
+    border:none;
+    color: aliceblue;
+}
 
 
 
