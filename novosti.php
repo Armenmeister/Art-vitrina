@@ -175,7 +175,7 @@
             
             <div class="container">
                 <div class="row">
-                    <div class="novosti col-12 text=center">
+                    <div class="novosti col-12 text-center">
                        
                        
                         <ul class="nav nav-tabs">
@@ -212,7 +212,7 @@
 
                                                 <div class="row">
                                                     <!-- тут короче фотография вставляется на всю свою ширину и висота ставится автоматически-->
-                                                    <div class="imgzapisi img-fluid col-12"><img src="images/zmg.png" alt="zmg" >
+                                                    <div class="imgzapisi img-fluid col-12 "><img src="images/1.jpg" alt="zmg" >
                                                     </div>
                                                 </div>
                                             </a>
