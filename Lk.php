@@ -37,8 +37,8 @@
 
                         <div id="links" class="col-sm-12 col-lg-7 col-md-12 col-xl-7 text-center ">
                            <ul class="menu">
-                               <li><a href="#">Иллюстрации</a></li>
-                               <li><a href="#">Новости</a></li>
+                               <li><a href="index.php">Иллюстрации</a></li>
+                               <li><a href="novosti.php">Новости</a></li>
                                <li><a href="#">Авторы</a></li>
                                <li><a href="#">Витрина</a></li>
                             
