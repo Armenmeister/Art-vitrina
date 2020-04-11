@@ -222,6 +222,7 @@
                                                             
                                                             <!--если подписан то вот эта галочка-->
                                                             <i class="fa fa-check" aria-hidden="true"></i>
+                                                            
 
                                                         </div>
                                                    

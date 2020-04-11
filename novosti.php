@@ -231,6 +231,8 @@
                                                             
                                                             <!--если подписан то вот эта галочка-->
                                                             <i class="fa fa-check" aria-hidden="true"></i>
+                                                            <!--это лайки-->
+                                                            <i class="fa fa-heart-o" aria-hidden="true" style="float:right;"></i>
 
                                                         </div>
                                                    
@@ -285,7 +287,8 @@
 
                                                         <!--если подписан то вот эта галочка-->
                                                         <i class="fa fa-check" aria-hidden="true"></i>
-
+                                                        <!--это лайки-->
+                                                        <i class="fa fa-heart-o" aria-hidden="true" style="float:right;"></i>
                                                     </div>
 
                                                     <div class="podpiska col-7">
@@ -373,7 +376,8 @@
 
                                                     <!--если подписан то вот эта галочка-->
                                                     <i class="fa fa-check" aria-hidden="true"></i>
-
+                                                    <!--это лайки-->
+                                                    <i class="fa fa-heart-o" aria-hidden="true" style="float:right;"></i>
                                                 </div>
 
                                                 <div class="podpiska col-7">

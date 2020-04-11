@@ -255,7 +255,10 @@ text-decoration:none;
 }
 
 
-
+.okno
+{
+    min-width:100%; 
+}
 
 
 
@@ -411,3 +414,4 @@ text-decoration:none;
 {
    
 }
+
