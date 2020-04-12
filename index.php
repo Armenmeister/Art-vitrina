@@ -11,7 +11,7 @@ session_start();
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-   <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="stylesheet" href="assets/css/MainPage.css">
     <title>Арт-витрина</title>
 </head>
 <body>
@@ -24,7 +24,7 @@ session_start();
      
          <div class="row">
       
-             <div class=" col-sm-12 col-md-12 col-lg-2 col-xl-2" id="log"><p>Арт-витрина</p>
+             <div class=" col-sm-12 col-md-12 col-lg-2 col-xl-2" id="logo"><p>Арт-витрина</p>
          </div>
           
              <div id="links" class="col-sm-12 col-lg-7 col-md-12 col-xl-7 text-center ">
@@ -141,7 +141,7 @@ session_start();
         <div class="akk btn-group btn-group-sm">
            <button class="akk2 btn">
                <a href="Lk.php"> <p><?=$_COOKIE['user']?></p></a>
-              
+               <!--если не придумаю номрального применения этому выпадающему списку,то удалю-->
            </button>
             <button class="akk3 btn dropdown-toggle" data-toggle="dropdown">
             </button>
@@ -173,7 +173,7 @@ session_start();
     
    </div>
 <div class="katalog">
-   <ul class="nav nav-tabs" id="myTab" role="tablist">
+   <ul class="nav nav-tabs" id="vkladki" role="tablist">
   <li class="nav-item">
     <a class="nav-link active" id="allimg-tab" data-toggle="tab" href="#allimg" role="tab" aria-controls="allimg" aria-selected="true">Все изображения</a>
   </li>
@@ -184,9 +184,10 @@ session_start();
 </ul>
 <div class="container-fluid">
    <div class="row">
-    <div class="tab-content" id="myTabContent">
+       <div class="tab-content" id="vkladki-Content">
   <div class="tab-pane fade show active" id="allimg" role="tabpanel" aria-labelledby="allimg-tab">[eqyz]</div>
-  <div class="tab-pane fade" id="popular" role="tabpanel" aria-labelledby="popular-tab">negfzffffffffddddddddddddddddddddddddddddddddddddddddd</div>
+  <div class="tab-pane fade" id="popular" role="tabpanel" aria-labelledby="popular-tab">популярные изображения
+  </div>
  </div>
 </div>  
   </div>
@@ -203,7 +204,7 @@ session_start();
        <div id="news" class="col-1"><a href=""><H5>НОВОСТЬ ДНЯ1</H5><p>У нас пополнение и еще всякое такое</p></a></div>
        <div id="news" class="col-1"><a href=""><H5>НОВОСТЬ ДНЯ2</H5><p>У нас пополнение и еще всякое такое</p></a></div>
        <div id="news" class="col-1"><a href=""><H5>НОВОСТЬ ДНЯ3</H5><p>У нас пополнение и еще всякое такое</p></a></div>
-       <div class="prop col-1"></div>
+       <div class="people col-1"></div>
       
        <div class="avtors col-1"><a href="">Алексей Забибулин</a></div>
        <div class="avtors col-1"><a href="">Алексей Забибулин</a></div>
@@ -214,7 +215,7 @@ session_start();
        <div id="news" class="col-1"><a href=""><H5>НОВОСТЬ ДНЯ4</H5><p>У нас пополнение и еще всякое такое</p></a></div>
        <div id="news" class="col-1"><a href=""><H5>НОВОСТЬ ДНЯ5</H5><p>У нас пополнение и еще всякое такое</p></a></div>
        <div id="news" class="col-1"><a href=""><H5>НОВОСТЬ ДНЯ6</H5><p>У нас пополнение и еще всякое такое</p></a></div>
-       <div class="prop col-1"></div>
+       <div class="people col-1"></div>
   
        <div class="avtors col-1"><a href="">Алексей Забибулин</a></div>
        <div class="avtors col-1"><a href="">Алексей Забибулин</a></div>

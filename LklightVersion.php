@@ -33,7 +33,7 @@
         
         
         
-        <link rel="stylesheet" href="assets/css/Account.css">
+        <link rel="stylesheet" href="assets/css/AccountLightVersion.css">
         <title>Арт-витрина</title>
     </head>
     <body>
@@ -299,35 +299,11 @@
                                                             </div>
                                                         </div>
                                                             <!-- начало слайдера --> 
-                                                        <div id="karusel" class="col-9 carousel" data-ride="carousel">
-                                                            <ol class="carousel-indicators">
-                                                                <li data-target="#karusel" data-slide-to="0" class="active"></li>
-                                                                <li data-target="#karusel" data-slide-to="1"></li>
-                                                                <li data-target="#karusel" data-slide-to="2"></li>
-                                                            </ol>
-                                                            <div class="carousel-inner ">
-                                                                <div class="carousel-item active">
-                                                                    <img class="d-block"
-                                                                    src="images/1.jpg" alt="Первый слайд">
-                                                                </div>
-                                                                <div class="carousel-item">
-                                                                    <img class="d-block" src="images/2.png" alt="Второй слайд">
-                                                                </div>
-                                                                <div class="carousel-item">
-                                                                    <img class="d-block" src="images/3.png" alt="Третий слайд">
-                                                                </div>
-                                                                
-                                                                <!--не шарю как но думаю надо сделать так что бы изображений могло быть больше или меньше -->
+                                                            <div class="fotoview col-9">
+                                                            
+                                                                <img class="d-block" src="images/q%20(1).jpg" >
+                                                           
                                                             </div>
-                                                            <a class="carousel-control-prev" href="#karusel" role="button" data-slide="prev">
-                                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                                <span class="sr-only">Previous</span>
-                                                            </a>
-                                                            <a class="carousel-control-next" href="#karusel" role="button" data-slide="next">
-                                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                                <span class="sr-only">Next</span>
-                                                            </a>
-                                                        </div>
                                                         </div>
                                                         </div>
                                                         
@@ -345,14 +321,13 @@
 
                                 <div id="com-body" class="form-group">
                                    <label for="comment-body">Комментарий:</label>
-                                    <textarea type="name" class="form-control" cols="10" rows="3" id="comment-body" placeholder="Твой комментарий" style="resize:none;"></textarea>
+                                    <textarea type="name" class="form-control  com" id="comment-body" placeholder="Твой комментарий"></textarea>
                                        </div>
-                                         <div class="form-group">
-                                             <button type="submit" id="comment-add" class="btn btn-primary">Комментировать</button>
-                                         </div>
+                                          
                                            </div>
-                                           
-                                      
+                                      <div class="form-group">
+                                   <button type="submit" id="comment-add" class="btn btn-primary">Комментировать</button>
+                                   </div>
                                                                 
                                                                
                                                     

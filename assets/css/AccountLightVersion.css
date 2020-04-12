@@ -198,27 +198,13 @@ text-decoration:none;
     font-size:28px;
 }
 
-.carousel
+.fotoview
 {
-    
-   margin:0;
-   padding:0;
-    width: 100%;
+    background: rgb(18, 18, 18,0.4); 
 }
-
-.carousel-inner
+.d-block
 {
-   
-}
-.carousel-item
-{
-    margin: 0;
-    height:500px;
-    background: rgba(0,0,0, 0.4);
-   
-}
-.carousel-item img
-{
+    background: rgb(18, 18, 18);
     margin:auto;
     text-align: center;
     display: inline-block;
@@ -226,10 +212,9 @@ text-decoration:none;
     max-width: 100%;
     max-height:600px; 
 }
-.carousel-control-prev
-{ 
-    left:15px;    
-}
+
+
+
 .avtor
 {
    width:270px; 
@@ -268,11 +253,7 @@ text-decoration:none;
     
 }
 
-.com
-{
-   height:200px;
-    resize: none;
-}
+
 #comment-name
 {
 
@@ -444,12 +425,15 @@ background: rgba(111, 111, 111, 0.3);
 }
 
 
-.youinfo label,input
+
+.youinfo input
 {
     background:none;
     border:none;
     border-bottom:1px solid white; 
+    color: aliceblue;
 }
+
 .youinfo textarea
 {
     border:none; 
@@ -552,15 +536,7 @@ textarea:focus, input:focus{
 {
     color:dimgrey;
 }
-#fot
-{
-    margin-left:-2px; 
-    color: aliceblue; 
-}
-#fot a
-{
-    color: aliceblue; 
-}
+
 
 
 .cabinet
@@ -603,14 +579,7 @@ textarea:focus, input:focus{
     box-shadow: none;
     border:none;
 }
-#usermenu
-{
-    min-width:91%;
-    border: 3px solid rgba(99, 178, 188, 1);
-    background:rgba(99, 178, 188, 0.47);
-    color: aliceblue;
-   
-}
+
 .dropdown-menu a
 {
     color: aliceblue;

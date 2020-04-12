@@ -19,7 +19,7 @@
         
         
         
-        <link rel="stylesheet" href="assets/css/stylenov.css">
+        <link rel="stylesheet" href="assets/css/News.css">
         <title>Арт-витрина</title>
     </head>
     <body>
